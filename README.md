@@ -3,6 +3,8 @@
 Juego web del **Mundo del Wumpus** con temática de Metallica que resuelve la práctica de Aprendizaje Reforzado con la
 **Ecuación de Optimalidad de Bellman (V\*)** por iteración de valores, en una rejilla de 10 × 10.
 
+[![GitHub Pages](https://github.com/sebastiux/practicabelman/actions/workflows/pages.yml/badge.svg)](https://github.com/sebastiux/practicabelman/actions/workflows/pages.yml)
+
 **Juega aquí:** https://sebastiux.github.io/practicabelman/
 
 Cinco escenarios, uno por disco y con dificultad creciente (la ruta segura más corta pasa de 18 a 26 pasos):
