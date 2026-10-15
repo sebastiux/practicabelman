@@ -600,7 +600,7 @@ El juego permite cambiar $\gamma$, $\varepsilon$ y agregar un \emph{resbalón}: 
 ${sensTable}
 
 \begin{itemize}[leftmargin=*]
-  \item \textbf{Descuento.} Con $\gamma = 0.99$ el agente valora mucho el futuro y $V_*(S_{0,0})$ sube a $${raw(g099.v0, 2)}$; con $\gamma = 0.5$ el oro lejano casi no pesa y $V_*(S_{0,0}) = ${raw(g05.v0, 2)}$, prácticamente el valor de vagar ($-1/(1-0.5) = -2$). La ruta óptima sigue siendo la misma.
+  \item \textbf{Descuento.} Con $\gamma = 0.99$ el agente valora mucho el futuro y $V_*(S_{0,0})$ sube a $${raw(g099.v0, 2)}$; con $\gamma = 0.5$ el oro lejano casi no pesa y $V_*(S_{0,0}) = ${raw(g05.v0, 2)}$, prácticamente el valor de vagar ($-1/(1-0.5) = -2$). En todos los casos el agente sigue llegando al oro por una ruta de ${dStart} pasos; con $\gamma = 0.5$ sólo cambian ${g05.changed} flechas por empates que se rompen distinto, porque los valores lejanos quedan casi iguales.
   \item \textbf{Umbral $\varepsilon$.} En el caso determinista no cambia el resultado: la iteración llega a $\Delta V = 0$ en $K = ${K}$.
   \item \textbf{Resbalón.} Con $p = 0.1$ la política cambia en ${slip1.changed} estados y llega al oro en el ${raw(slip1.win, 1)}\% de los episodios. Con $p = 0.2$ caminar entre tantos peligros es tan riesgoso que la política óptima prefiere quedarse en zonas seguras ($V_*(S_{0,0}) = ${raw(slip2.v0, 2)}$). Si en ese mundo se usara la política determinista, el agente llegaría al oro sólo el ${raw(naiveUnderSlip.win, 1)}\% de las veces y su ganancia media sería ${m(naiveUnderSlip.meanG, 2)}, mucho peor que ${m(slip2.meanG, 2)}. Además, la convergencia deja de ser exacta y $K$ depende de $\varepsilon$.
 \end{itemize}
