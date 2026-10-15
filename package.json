@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "typecheck": "tsc",
-    "report": "tsx scripts/report.ts"
+    "report": "tsx scripts/report.ts",
+    "report:latex": "tsx scripts/report-latex.ts"
   },
   "dependencies": {
     "@fontsource/metal-mania": "5.3.0",
